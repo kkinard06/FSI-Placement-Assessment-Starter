@@ -27,8 +27,8 @@ document.getElementById('minus-gb').addEventListener('click', function() {
         Total()
 
         document.querySelector('#qty-gb').textContent=gb
-}
-
+    }
+})
 // Event listener for clicks on the "+" button for Chocolate Chip cookies
 document.getElementById('add-cc').addEventListener('click', function() {
     
@@ -47,9 +47,7 @@ document.getElementById('minus-cc').addEventListener('click', function() {
         Total()
         document.querySelector('#qty-cc').textContent=cc
     }
-
 })
-
 // Event listener for clicks on the "+" button for Sugar cookies
 document.getElementById('add-sugar').addEventListener('click', function() {
     
@@ -69,8 +67,7 @@ document.getElementById('minus-sugar').addEventListener('click', function() {
         document.querySelector('#qty-sugar').textContent=sugar
     }
 
-})
-    document.querySelector('#qty-total').textContent = total
+document.querySelector('#qty-total').textContent = total
 })
 function Total(){
     total=gb+cc+sugar
